@@ -4,10 +4,30 @@ html,body,#app {
   padding: 0;
 }
 
+/* 给侧边栏内容 文字设置样式 */
 .el-submenu__title,.el-menu-item {
   font-size: 13px;
 }
 
+/* 给左侧功能按钮图标设置样式 */
 i.iconfont {
   margin-right: 10px;
+}
+
+/* 内容卡片区样式设置 */
+.el-card {
+  margin-top: 15px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 内容卡片区表格样式设置 */
+.el-table {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* 分页全局样式设置 */
+.el-pagination {
+  margin-top: 15px;
+  font-size: 12px;
 }

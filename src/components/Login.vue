@@ -32,8 +32,8 @@ export default {
   data() {
     return {
       loginForm: {
-        username: '',
-        password: ''
+        username: 'admin',
+        password: '123456'
       },
       loginFormRules: {
         username: [
@@ -54,7 +54,12 @@ export default {
           // 通过sessionStorage记录token信息
           window.sessionStorage.setItem('token', res.data.token)
           // 进行路由跳转
-          this.$router.push('/home')
+          this.$router.push('/')
+          // 登录成功后的消息提示
+          this.$message({
+            message: '登录成功！',
+            type: 'success'
+          })
         }
       })
     },
